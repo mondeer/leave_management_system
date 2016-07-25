@@ -4,7 +4,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+// Auth routes
+
+Route::get('/register', 'RegisterCtrl@register');
+
+Route::post('/postregister', 'RegisterCtrl@postRegister');
+
+
+
+// end of auth routes
 
 Route::get('/admin', function () {
   return view('hr.home');
