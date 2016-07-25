@@ -56,7 +56,7 @@
                   <img src="images/mtrh.png" width="150" height="150" alt="" /><br><br>
                   <div class="panel panel-body imondopac">
                     <h1 class="imondwhite">Login to MTRH LMS</h1>
-                    <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="/login">
                                 {{ csrf_field() }}
 
                                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -103,7 +103,7 @@
                                             Login
                                         </button>
 
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        <a class="btn btn-link" href="#">
                                             Forgot Your Password?
                                         </a>
                                     </div>

@@ -3,7 +3,7 @@
 namespace leave\Http\Controllers;
 
 use Illuminate\Http\Request;
-use cartalyst\sentinel;
+use Sentinel;
 
 class RegisterCtrl extends Controller
 {
@@ -19,12 +19,26 @@ class RegisterCtrl extends Controller
         'last_name'=>$request->input('last_name'),
       ]);
 
-      $admin = Sentinel:findRoleBySlug('admin');
-      $hr = Sentinel:findRoleBySlug('hr');
-      $employee = Sentinel:findRoleBySlug('employee');
-      $hod = Sentinel:findRoleBySlug('hod');
+      $admin = Sentinel::findRoleBySlug('admin');
+      $hr = Sentinel::findRoleBySlug('hr');
+      $employee = Sentinel::findRoleBySlug('employee');
+      $hod = Sentinel::findRoleBySlug('hod');
 
+      $role = $request->input('role');
 
+      if($role =='admin'){
+        $admin->users()->attach($user);
+      }
+      elseif($request->input('role')=='hr'){
+        $hr->users()->attach($user);
+      }
+      elseif($request->input('role')=='hod'){
+        $hod->users()->attach($user);
+      }elseif($request->input('role')=='employee') {
+        $employee->users()->attach($user);
+      }
+
+      return redirect('/');
 
     }
 }

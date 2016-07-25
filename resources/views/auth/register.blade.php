@@ -30,13 +30,13 @@
     </div>
 
     <div class="form-group">
-        <label for="email" class="col-md-4 control-label">User Role</label>
+        <label class="col-md-4 control-label">User Role</label>
         <select class="" name="role">
           <option></option>
-          <option>ADMIN</option>
-          <option>HR</option>
-          <option>HOD</option>
-          <option>Employee</option>
+          <option>admin</option>
+          <option>hr</option>
+          <option>hod</option>
+          <option>employee</option>
         </select>
     </div>
 
