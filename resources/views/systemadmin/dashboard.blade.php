@@ -37,11 +37,11 @@
 
     <body class="nav-md">
         <div class="container body">
-            <div class="main_container imondgray">
+            <div class="main_container">
 
-                @include('hr/includes/sidebar')
+                @include('systemadmin/includes/sidebar')
 
-                @include('hr/includes/topbar')
+                @include('systemadmin/includes/topbar')
 
                 @yield('main_container')
 

@@ -5,11 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 class MigrationCartalystSentinel extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('activations', function (Blueprint $table) {
@@ -90,11 +86,6 @@ class MigrationCartalystSentinel extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::drop('activations');

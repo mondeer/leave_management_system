@@ -30,17 +30,8 @@
         <link rel="shortcut icon" href="imondcorp.ico">
 
     </head>
-    <!-- <div id="fh5co-page"> -->
-
-
-
 
   		<div class="fh5co-cover fh5co-cover-style-2 js-full-height imond" data-stellar-background-ratio="0.5" data-next="yes">
-  		  	<span class="scroll-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
-  				<a href="#">
-  					<span class="mouse"><span></span></span>
-  				</a>
-  			</span>
   			<div class="fh5co-overlay"></div>
   			<div class="fh5co-cover-text">
 
@@ -72,7 +63,7 @@
 	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-   <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
 	<!-- Owl Carousel -->
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- Magnific Popup -->

@@ -103,8 +103,8 @@
                                             Login
                                         </button>
 
-                                        <a class="btn btn-link" href="#">
-                                            Forgot Your Password?
+                                        <a class="btn btn-link" href="/register">
+                                            Register
                                         </a>
                                     </div>
                                 </div>

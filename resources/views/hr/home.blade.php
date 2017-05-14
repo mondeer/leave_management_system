@@ -5,9 +5,9 @@
         @yield('content')
     </div>
 
-        <footer class="imond">
-            <div class="pull-right">
-              &copy;2017 MTRH LMS by <a href="#">Charity</a>
+        <footer class="imondgray">
+            <div class="pull-right imondgray">
+              <h4>&copy;2017 MTRH LMS by <a href="#">Charity</a></h4>
             </div>
             <div class="clearfix"></div>
         </footer>

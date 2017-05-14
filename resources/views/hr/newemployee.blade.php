@@ -7,48 +7,55 @@
 
     <form class="form-horizontal" action="/create/employee" method="post">
       {{csrf_field()}}
-      <div class="col-md-8">
+      <div class="col-md-12">
 
         <div class="form-group">
-          <label class="col-md-2">First Name</label>
+          <label class="col-md-1">PF Number</label>
           <div class="">
-            <input class="col-md-3" type="text" name="f_name" value="{{old('f_name')}}">
-          </div>
-          <label class="col-md-2">Last Name</label>
-          <div class="">
-            <input class="col-md-3" type="text" name="l_name" value="{{old('l_name')}}">
+            <input class="col-md-2" type="number" name="pf_number" value="{{old('pf_number')}}">
           </div>
         </div>
 
         <div class="form-group">
-          <label class="col-md-2">PF Number</label>
+          <label class="col-md-1">First Name</label>
           <div class="">
-            <input class="col-md-3" type="number" name="pf_number" value="{{old('pf_number')}}">
+            <input class="col-md-2" type="text" name="first_name" value="{{old('first_name')}}">
           </div>
-          <label class="col-md-2">Gender</label>
+          <label class="col-md-1">Middle Name</label>
           <div class="">
-            <input class="col-md-3" type="text" name="gender" value="{{old('gender')}}">
+            <input class="col-md-2" type="text" name="middle_name" value="{{old('middle_name')}}">
+          </div>
+          <label class="col-md-1">Last Name</label>
+          <div class="">
+            <input class="col-md-2" type="text" name="last_name" value="{{old('last_name')}}">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-1">Department</label>
+          <div class="">
+            <input class="col-md-2" type="text" name="department" value="{{old('department')}}">
+          </div>
+          <label class="col-md-1">Designation</label>
+          <div class="">
+            <input class="col-md-2" type="text" name="designation" value="{{old('designation')}}">
+          </div>
+          <label class="col-md-1">Mobile N0.</label>
+          <div class="">
+            <input class="col-md-2" type="text" name="mobile" value="{{old('mobile')}}">
           </div>
         </div>
 
         <div class="form-group">
 
-          <label class="col-md-3">Date of Appointment</label>
+          <label class="col-md-1">Email</label>
           <div class="">
-            <input class="col-md-3" type="text" name="dop" value="{{old('dop')}}">
+            <input class="col-md-2" type="text" name="email" value="{{old('email')}}">
           </div>
         </div>
-
-        <div class="form-group">
-          <label class="col-md-2">Department</label>
-          <div class="">
-            <input type="text" name="department" value="{{old('department')}}">
-          </div>
-        </div>
-
 
         <div class="align-center">
-          <input class="btn btn-success col-md-offset-4" type="submit" name="" value="Submit">
+          <button class="call-to-action btn-lg align-center" type="submit">Submit</button>
         </div>
       </div>
     </form>

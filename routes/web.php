@@ -30,9 +30,9 @@ Route::put('/leaves/edit/{id}', 'LeaveCtrl@update');
 // end employee routes
 
 // hr
-Route::get('/create/employee', function() {
-  return view('hr.newemployee');
-});
+Route::get('/create/employee', 'HrCtrl@employee');
+
+Route::post('/create/employee', 'HrCtrl@postEmployee');
 
 Route::get('/mtrh/hr', function () {
   return view('hr.home');

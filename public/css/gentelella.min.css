@@ -38,6 +38,14 @@
    background-color: #700B0D;
  }
 
+ .imondgray {
+ 	background: rgba(4,38,66,1);
+ }
+
+ .imondhr{
+ 	background: rgba(236,94,1, 0.7);
+ }
+
 
  /* NAV STYLE #1 */
  .fh5co-nav-style-1, .fh5co-nav-style-2 {
