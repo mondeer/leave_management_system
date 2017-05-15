@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Employee_infromation extends Model
 {
-  protected $fillable = ['pf_number', 'first_name', 'middle_name', 'last_name', 'department', 'designation', 'mobile', 'email'];
+  protected $fillable = ['pf_number', 'national_id', 'first_name', 'middle_name', 'last_name', 'department', 'designation', 'mobile', 'email'];
 
   public function granted_leaves() {
     return $this->hasMany('leave\Granted_leave');

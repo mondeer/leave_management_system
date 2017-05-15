@@ -38,7 +38,6 @@
             <option>admin</option>
             <option>hr</option>
             <option>hod</option>
-            <option>employee</option>
           </select>
       </div>
 

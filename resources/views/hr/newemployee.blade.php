@@ -14,6 +14,10 @@
           <div class="">
             <input class="col-md-2" type="number" name="pf_number" value="{{old('pf_number')}}">
           </div>
+          <label class="col-md-1">National ID</label>
+          <div class="">
+            <input class="col-md-2" type="text" name="national_id" value="{{old('national_id')}}">
+          </div>
         </div>
 
         <div class="form-group">

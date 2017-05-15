@@ -17,8 +17,10 @@ class LoginCtrl extends Controller
         return redirect('/create/employee');
       } elseif (Sentinel::getUser()->roles()->first()->slug == 'hod') {
         return redirect('/admin/leaves');
-      } else {
+      } elseif (Sentinel::getUser()->roles()->first()->slug == 'employee') {
         return redirect('/leave/apply');
+      } else {
+        return redirect('/');
       }
 
     }

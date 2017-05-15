@@ -17,9 +17,9 @@ Route::post('/postregister', 'RegisterCtrl@postRegister');
 // end of auth routes
 
 // employee routes
-Route::get('/leave/apply', 'LeaveCtrl@apply');
+Route::get('/leave/apply', 'EmpCtrl@apply');
 
-Route::post('/leave/apply', 'LeaveCtrl@postApply');
+Route::post('/leave/apply', 'EmpCtrl@postApply');
 
 Route::get('/leaves/view', 'LeaveCtrl@view');
 
@@ -33,6 +33,10 @@ Route::put('/leaves/edit/{id}', 'LeaveCtrl@update');
 Route::get('/create/employee', 'HrCtrl@employee');
 
 Route::post('/create/employee', 'HrCtrl@postEmployee');
+
+Route::get('/leave/type', 'HrCtrl@leaveTypes');
+
+Route::post('/leave/type', 'HrCtrl@postLeave');
 
 Route::get('/mtrh/hr', function () {
   return view('hr.home');

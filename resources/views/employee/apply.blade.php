@@ -10,27 +10,27 @@
       <div class="col-md-8">
 
         <div class="form-group">
-          <label class="col-md-2">First Name</label>
+          <label class="col-md-2">Type of Leave</label>
           <div class="">
-            <input class="col-md-3" type="text" name="f_name" value="{{old('f_name')}}" placeholder="Employee First Name" required>
+            <input class="col-md-3" type="text" name="leave_type" value="{{old('leave_type')}}" placeholder="Type of Leave" required>
           </div>
-          <label class="col-md-2">Last Name</label>
+          <label class="col-md-2">Start Date</label>
           <div class="">
-            <input class="col-md-3" type="text" name="l_name" value="{{old('l_name')}}" placeholder="Last Name" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="col-md-2">PF Number</label>
-          <div class="">
-            <input class="col-md-3" type="number" name="pf_number" value="{{old('pf_number')}}" placeholder="Personal Number" required>
+            <input class="col-md-3" type="date" name="start_date" value="{{old('start_date')}}" placeholder="Leave Start Date" required>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="col-md-2">Leave Days</label>
+          <label class="col-md-2">End Date</label>
           <div class="">
-            <input class="col-md-3" type="text" name="leave_days" value="{{old('leave_days')}}" placeholder="Number of Leave-Days" required>
+            <input class="col-md-3" type="date" name="end_date" value="{{old('end_date')}}" placeholder="Leave ending Date" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-2">Comments</label>
+          <div class="">
+            <input class="col-md-3" type="textarea" name="comments" value="{{old('comments')}}" placeholder="Comments" required>
           </div>
         </div>
 
