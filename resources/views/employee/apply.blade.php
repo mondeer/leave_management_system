@@ -30,7 +30,7 @@
         <div class="form-group">
           <label class="col-md-2">Comments</label>
           <div class="">
-            <input class="col-md-3" type="textarea" name="comments" value="{{old('comments')}}" placeholder="Comments" required>
+            <input class="col-md-3" type="textarea" name="comments" value="{{old('comments')}}" placeholder="Comments">
           </div>
         </div>
 
